@@ -1,1 +1,2 @@
 # samplejenkinsrepo
+  * teska bajey
