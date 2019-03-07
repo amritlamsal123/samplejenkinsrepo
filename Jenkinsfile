@@ -15,6 +15,9 @@ node('maven'){
         archiveArtifacts '**/target/*.jar'
     }
     stage('deployment'){
-        
+        sshagent(['deployusr']) {
+    // some block
+        sh "scp -o StrictHostKeyChecking=no target/my-app-1-RELEASE.jar deployusr@54.167.248.84:/opt/tomcat/"
+}
     }
 }
