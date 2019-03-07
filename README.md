@@ -1,3 +1,0 @@
-# samplejenkinsrepo
-  * teska bajey
-df
