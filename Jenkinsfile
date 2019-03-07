@@ -17,7 +17,7 @@ node('maven'){
     stage('deployment'){
         sshagent(['deployusr']) {
     // some block
-        sh "scp -o StrictHostKeyChecking=no target/my-app-1-RELEASE.jar deployusr@54.167.248.84:/opt/tomcat/"
-}
+        sh "scp -o StrictHostKeyChecking=no /home/ec2-user/workspace/pipeline/target/my-app-1-RELEASE.jar deployusr@54.167.248.84:/opt/tomcat/webapp"
+    }
     }
 }
