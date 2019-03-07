@@ -14,4 +14,7 @@ node('maven'){
     stage('archieving artifacts'){
         archiveArtifacts '**/target/*.jar'
     }
+    stage('deployment'){
+        
+    }
 }
