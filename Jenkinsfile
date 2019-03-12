@@ -1,7 +1,7 @@
 node('maven'){
     def mvnhome = tool name: 'maven360', type: 'maven'
     stage('1st stage'){
-        echo "1st  stage"
+        echo "1st  stagee"
     }
     stage('maven build'){
         sh "$mvnhome/bin/mvn clean test surefire-report:report-only"
