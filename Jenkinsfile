@@ -18,9 +18,9 @@ node('maven'){
         sshagent(['deployusr']) {
     // some block
        
-        sh "ssh -o StrictHostKeyChecking=no deployusr@10.0.0.53 /opt/tomcat/start.sh"
-        sh "scp -o StrictHostKeyChecking=no /home/ec2-user/workspace/pipeline/target/my-app-1-RELEASE.jar deployusr@10.0.0.53:/opt/tomcat/webapp"
-        sh "ssh -o StrictHostKeyChecking=no deployusr@10.0.0.53 /opt/tomcat/stop.sh"
+      //  sh "ssh -o StrictHostKeyChecking=no deployusr@10.0.0.53 /opt/tomcat/start.sh"
+      //  sh "scp -o StrictHostKeyChecking=no /home/ec2-user/workspace/pipeline/target/my-app-1-RELEASE.jar deployusr@10.0.0.53:/opt/tomcat/webapp"
+      //  sh "ssh -o StrictHostKeyChecking=no deployusr@10.0.0.53 /opt/tomcat/stop.sh"
     }
     }
 }
