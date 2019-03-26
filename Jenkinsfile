@@ -1,7 +1,7 @@
 node('maven'){
     def mvnhome = tool name: 'maven', type: 'maven'
     stage('1st stage'){
-        echo "1st  stagee"
+        echo "1st  stagdee"
         git credentialsId: 'git_token', url: 'https://github.com/amritlamsal123/samplejenkinsrepo.git'
     }
     stage('maven build'){
