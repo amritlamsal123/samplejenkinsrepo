@@ -22,5 +22,5 @@ node('maven'){
       //  sh "scp -o StrictHostKeyChecking=no /home/ec2-user/workspace/pipeline/target/my-app-1-RELEASE.jar ec2-user@10.0.0.53:/opt/tomcat/webapp"
       //  sh "ssh -o StrictHostKeyChecking=no ec2-user@10.0.0.53 /opt/tomcat/stop.sh"
   //  }
-    }
+   // }
 }
